@@ -1,4 +1,4 @@
 pandas==1.3.5
 plotly==5.13.0
-plotnine==0.10.1
+plotnine==0.8.0
 streamlit==1.17.0
