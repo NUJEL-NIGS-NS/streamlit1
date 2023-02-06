@@ -11,7 +11,8 @@ st.set_page_config(page_title="Sales Analysis",
                    layout="wide"
                    )
 #------------------------------------------------------------------------------------------
-df=pd.read_csv(r'E:\New folder\rivcl.csv')
+url="https://raw.githubusercontent.com/NUJEL-NIGS-NS/streamlit1/master/rivcl.csv"
+df=pd.read_csv(url)
 st.title("Sales PieChart Total")
 fi = px.pie(df, values="Outwards",
              names="Product"
