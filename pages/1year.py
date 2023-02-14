@@ -9,7 +9,8 @@ st.set_page_config(page_title="Sales Analysis",
                    layout="wide"
                    )
 #------------------------------------------------------------------------------------------
-df=pd.read_csv(r'C:\Users\user\Desktop\intern\1year_onl.csv')
+url="https://raw.githubusercontent.com/NUJEL-NIGS-NS/streamlit1/master/pages/1year_onl.csv"
+df=pd.read_csv(url)
 st.sidebar.header("pages")
 fi = px.pie(df, values="Outwards",
              names="Product"
